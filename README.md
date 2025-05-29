@@ -3,7 +3,7 @@
 ```markdown
 # 📦 DevOps Playground – Containerized Applications Repo
 
-Welcome to the **container-stack-examples** — a collection of containerized applications managed and deployed using Docker, Kubernetes, Helm etc
+Welcome to the **container-stack** — a collection of containerized applications managed and deployed using Docker, Kubernetes, Helm etc
 
 Each application is stored in its **own folder** along with:
 - App source code or Dockerfile
@@ -18,11 +18,17 @@ Each application is stored in its **own folder** along with:
 ```
 /
 ├── fastapi-app/              # FastAPI app + Dockerfile + K8s + Helm chart
+
 ├── node-api/                 # Node.js backend service with deployment files
+
 ├── redis-cache/              # Redis config + Helm chart values
+
 ├── react-ui/                 # React frontend + Dockerfile + Nginx config
+
 ├── mysql-db/                 # MySQL Docker + init scripts
+
 ├── elasticsearch-cluster/    # ES K8s manifests + monitoring config
+
 └── etc 
 
 ````
