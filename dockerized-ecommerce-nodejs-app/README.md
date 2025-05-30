@@ -31,25 +31,25 @@ Docker
 The application will start on http://localhost:3000
 
 ## Dockerizing the Application
-FROM node:20-alpine:
+```FROM node:20-alpine:```
 Specifies the base image. Here, we're using the official Node.js version 20 image based on Alpine Linux, which is lightweight and suitable for production environments.
 
-WORKDIR /app:
+```WORKDIR /app:```
 Sets the working directory inside the container to /app. All subsequent commands will be run from this directory.
 
-COPY package*.json ./:
+```COPY package*.json ./:```
 Copies both package.json and package-lock.json to the working directory. The asterisk (*) ensures both files are copied if they exist.
 
-RUN npm install:
+```RUN npm install:```
 Installs the project dependencies defined in package.json.
 
-COPY . .:
+```COPY . .:```
 Copies the rest of the application code to the working directory inside the container.
 
-EXPOSE 3000:
+```EXPOSE 3000:```
 Informs Docker that the container listens on port 3000. This is the port our Node.js application uses.
 
-CMD ["node", "app.js"]:
+```CMD ["node", "app.js"]:```
 Defines the command to run the application when the container starts.
 
 ## Building the Docker Image
