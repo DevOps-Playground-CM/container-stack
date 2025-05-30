@@ -6,14 +6,17 @@ This project is a  production-ready Flask application designed for deployment in
 
 dockerized-flask-app/
 ├── static/ # Static assets (CSS, images, JS)
+
 ├── templates/ # HTML templates (e.g., index.html)
+
 ├── app.py # Main Flask application
+
 ├── requirements.txt # Python dependencies
+
 ├── Dockerfile # Docker build instructions
+
 └── README.md # Project documentation
 
-
----
 
 ##  Prerequisites
 
