@@ -1,0 +1,15 @@
+{
+  "name": "dockerized-nodejs-starter-app",
+  "version": "1.0.0",
+  "description": "Follow these steps to containerize your web app using Docker and serve it locally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
